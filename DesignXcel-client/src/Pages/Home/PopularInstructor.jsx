@@ -10,7 +10,7 @@ const Instructors = () => {
   useEffect(() => {
     const fetchInstructors = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/instructors");
+        const response = await axios.get("https://design-xcel-server.vercel.app/instructors");
         setInstructors(response.data.slice(0, 6)); // Limiting to 6 instructors
       } catch (error) {
         console.error(error);
