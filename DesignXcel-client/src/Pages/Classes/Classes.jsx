@@ -45,7 +45,7 @@ const Classes = () => {
       };
 
       axios
-        .post("http://localhost:5000/carts", orderItem)
+        .post("https://design-xcel-server.vercel.app/carts", orderItem)
         .then((res) => {
           if (res.status === 200) {
             console.log("error handle", res.data);
